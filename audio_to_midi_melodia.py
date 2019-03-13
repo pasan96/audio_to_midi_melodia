@@ -8,7 +8,7 @@ import numpy as np
 from midiutil.MidiFile import MIDIFile
 from scipy.signal import medfilt
 import jams
-import __init__
+# import __init__
 
 '''
 Extract the melody from an audio file and convert it to MIDI.
@@ -48,7 +48,7 @@ def save_jams(jamsfile, notes, track_duration, orig_filename):
                               duration=track_duration)
     midi_an.annotation_metadata = \
         jams.AnnotationMetadata(
-            data_source='audio_to_midi_melodia.py v%s' % __init__.__version__,
+            data_source='audio_to_midi_melodia.py v0.0.0',
             annotation_tools='audio_to_midi_melodia.py (https://github.com/'
                              'justinsalamon/audio_to_midi_melodia)')
 
